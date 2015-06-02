@@ -126,7 +126,9 @@
         variance: 0.5
     });
     var bg = document.getElementById("loginBG");
-    bg.appendChild(pattern.canvas())
+    var canvas = bg.appendChild(pattern.canvas());
+  
+    document.body.style.background = "url(" + pattern.png() + ")";
 </script>
   
 </body>
