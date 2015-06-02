@@ -281,8 +281,9 @@
     var bg = document.getElementById("menuBG");
     bg.appendChild(pattern.canvas())
     
+    var avatar = document.getElementById("user-avatar");
     var cover =  document.getElementById("cover");
-    cover.insertBefore(document.getElementById("user-avatar"),cover.pattern.canvas())
+    cover.insertBefore(pattern.canvas(),cover.avatar)
 </script>
 
 
