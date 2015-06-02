@@ -234,7 +234,7 @@
 		
 		<div class="content-inner">
         <div id="cover">
-              <div class="">
+              <div id="user-avatar">
                 
                             <div class="avatar avatar-profile avatar-sm">
                                <span class="icon icon-person"></span>
@@ -282,7 +282,7 @@
     bg.appendChild(pattern.canvas())
     
     var cover =  document.getElementById("cover");
-    cover.prependChild(pattern.canvas())
+    cover.insertBefore(document.getElementById("user-avatar"),cover.pattern.canvas())
 </script>
 
 
