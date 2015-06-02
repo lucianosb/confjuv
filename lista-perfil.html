@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-    <meta name="theme-color" content="#E65100" />
+   <meta name="theme-color" content="#33691E" />
 	<title>3confjuv</title>
 
 	<!-- css -->
@@ -20,7 +20,7 @@
 		<![endif]-->
     
 </head>
-<body class="avoid-fout page-home">
+<body class="avoid-fout page-search">
 	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
 		<div class="progress-circular progress-circular-alt progress-circular-center">
 			<div class="progress-circular-wrapper">
@@ -36,7 +36,7 @@
 			</div>
 		</div>
 	</div>
-	<header class="header" style="z-index:1020;">
+	<header class="header">
 		<ul class="nav nav-list pull-left">
 			<li>
 				<a class="menu-toggle" href="#menu">
@@ -135,7 +135,7 @@
 			<div class="menu-wrap">
 				<div class="menu-top">
 					<div class="menu-top-info">
-						<form class="form-group-home menu-top-form">
+						<form class="form-group-search menu-top-form">
 							<label class="access-hide" for="menu-search">Busca</label>
 							<input class="form-control form-control-inverse menu-search-focus" id="menu-search" placeholder="Pesquisar palavra-chave" type="search">
 							<button class="access-hide" type="submit">Pesquisar</button>
@@ -145,13 +145,13 @@
 				<div class="menu-content">
 					<div class="menu-content-inner">
 						<h2 class="content-sub-heading">Filtrar</h2>
-						<nav class="tab-nav tab-nav-home">
+						<nav class="tab-nav tab-nav-search">
 							<ul class="nav nav-justified">
 								<li class="active">
-									<a class="waves-color-home waves-effect" data-toggle="tab" href="#first-tab">Usuários</a>
+									<a class="waves-color-search waves-effect" data-toggle="tab" href="#first-tab">Usuários</a>
 								</li>
 								<li>
-									<a class="waves-color-home waves-effect" data-toggle="tab" href="#second-tab">Propostas</a>
+									<a class="waves-color-search waves-effect" data-toggle="tab" href="#second-tab">Propostas</a>
 								</li>
 								
 							</ul>
@@ -160,7 +160,7 @@
 							<div class="tab-pane fade active in" id="first-tab">
 								<fieldset>
                                     <legend>Tipos de perfil</legend>
-                                    <div class="form-group form-group-home">
+                                    <div class="form-group form-group-search">
                                         <div class="checkbox checkbox-adv">
                                             <label for="input-checkbox-1">
                                                 <input class="access-hide" id="input-checkbox-1" name="input-checkbox" type="checkbox">Pessoas
@@ -199,7 +199,7 @@
                                     </div>
                                 </fieldset>
                                 <div class="form-group-btn">
-						<button class="btn btn-home waves-button waves-light waves-effect" type="submit">Filtrar</button>
+						<button class="btn btn-search waves-button waves-light waves-effect" type="submit">Filtrar</button>
 					</div>
 							</div>
 							<div class="tab-pane fade" id="second-tab">
@@ -216,7 +216,7 @@
                                     </div>
                                 </fieldset>
                                 <div class="form-group-btn">
-						<button class="btn btn-home waves-button waves-light waves-effect" type="submit">Filtrar</button>
+						<button class="btn btn-search waves-button waves-light waves-effect" type="submit">Filtrar</button>
 					</div>
                                      
 							</div>
@@ -234,52 +234,86 @@
 		
 		<div class="content-inner">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
-                        
-						<h2 class="content-sub-heading">Dialogue nas propostas</h2>
-                        <div class="cards"></div>
-							<!--<div class="card">
-								<div class="card-main">
-									<div class="card-img">
-										<img alt="alt text" src="images/samples/landscape.jpg">
-										<p class="card-img-heading">Título da Proposta!</p>
-									</div>
-									<div class="card-inner">
-										<p>
-											Lorem ipsum dolor sit amet, eum no viderer molestie percipitur. Ea vis eirmod iuvaret concludaturque, sonet admodum accusamus nec ad. Mea purto sonet te. Ut quo assum nostrum, vel justo suavitate cu, veniam malorum sit no. Eu has vocent quaeque.
-
-										</p>
-									</div>
-									<div class="card-action">
-										
-                                        <ul class="nav nav-list pull-right">
-											<li>
-												<a href="javascript:void(0)"><span class="icon icon-open-in-new text-blue"></span>&nbsp;<span class="text-blue">Acessar</span></a>
-											</li>
-											<li>
-												<a href="javascript:void(0)"><span class="icon icon-comment"></span>&nbsp;Comentar</a>
-											</li>
-                                            <li>
-												<a href="javascript:void(0)"><span class="icon icon-notifications"></span>&nbsp;Seguir</a>
-											</li>
-										</ul>
-									</div>
-                                    
-								</div>
-							</div>-->
-                        <div class="controls row">
-                            <div class="col-lg-6 col-md-5">
-                                <div id="swipe_left" class="rate"><a class="btn btn-flat waves-button waves-effect">Anterior</a></div>
-                            </div>
 				
-                            <div class="col-lg-6 col-md-5">
-				                <div id="swipe_right" class="rate"><a class="pull-right btn btn-flat btn-blue waves-button waves-effect">Próxima</a></div>
-                            </div>
-			</div>
-                        
-						</div>
+                <h2 class="content-sub-heading">Perfis de NNNN</h2>
+                
+                <div class="tile-wrap" id="resultados">
+					<div class="tile">
+						
+							<div class="pull-left tile-side">
+								<div class="avatar avatar-proposal avatar-sm">
+									<span class="icon icon-person"></span>
+								</div>
+                 		</div>
+							<div class="tile-action" data-ignore="tile">
+								<ul class="nav nav-list pull-right">
+									<li>
+										<a href="javascript:void(0)"><span class="access-hide">Acessar</span><span class="icon icon-open-in-new"></span></a>
+									</li>
+									<li>
+										<a href="javascript:void(0)"><span class="access-hide">Adicionar Amigo</span><span class="icon icon-person-add"></span></a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="tile-inner">
+								<div class="text-overflow">lorem ipsum dolor sit amet</div>
+							</div>
+						
+						
 					</div>
+					<div class="tile">
+						
+							<div class="pull-left tile-side">
+								<div class="avatar avatar-proposal avatar-sm">
+									<span class="icon icon-person"></span>
+								</div>
+                 		</div>
+							<div class="tile-action" data-ignore="tile">
+								<ul class="nav nav-list pull-right">
+									<li>
+										<a href="javascript:void(0)"><span class="access-hide">Acessar</span><span class="icon icon-open-in-new"></span></a>
+									</li>
+									<li>
+										<a href="javascript:void(0)"><span class="access-hide">Adicionar Amigo</span><span class="icon icon-person-add"></span></a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="tile-inner">
+								<div class="text-overflow">lorem ipsum dolor sit amet</div>
+							</div>
+						
+						
+					</div>
+                  
+					<div class="tile">
+						
+							<div class="pull-left tile-side">
+								<div class="avatar avatar-proposal avatar-sm">
+									<span class="icon icon-person"></span>
+								</div>
+                 		</div>
+							<div class="tile-action" data-ignore="tile">
+								<ul class="nav nav-list pull-right">
+									<li>
+										<a href="javascript:void(0)"><span class="access-hide">Acessar</span><span class="icon icon-open-in-new"></span></a>
+									</li>
+									<li>
+										<a href="javascript:void(0)"><span class="access-hide">Adicionar Amigo</span><span class="icon icon-person-add"></span></a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="tile-inner">
+								<div class="text-overflow">lorem ipsum dolor sit amet</div>
+							</div>
+						
+						
+					</div>
+                  
+				</div>
+                
 				</div>
 			</div>
 		</div>
@@ -310,7 +344,7 @@
     var pattern = Trianglify({
         width: window.innerWidth, 
         height: window.innerHeight,
-        x_colors: 'YlOrRd',
+        x_colors: 'GnBu',
         y_colors: 'match_x',
         cell_size: 90,
         variance: 0.5
