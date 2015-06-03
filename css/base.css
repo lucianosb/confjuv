@@ -10169,4 +10169,7 @@ textarea.picker__select--year {
     #game-progress div.progress .progress-bar {
       border-radius: 5px 1px 1px 5px; }
 
+.comments span.avatar {
+  margin-top: 12px; }
+
 /*# sourceMappingURL=base.css.map */
