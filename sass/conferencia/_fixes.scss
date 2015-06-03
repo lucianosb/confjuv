@@ -1,5 +1,5 @@
 #cover { 
-    background-image:url(../images/pattern.svg); 
+    /*background-image:url(../images/pattern.svg); */
     display: flex; 
     display: -webkit-flex; 
     width: 100%; 
@@ -17,6 +17,10 @@
             color: white;
             padding: 12px;
             font-size: 14pt;
+        }
+        
+        h2 {
+            color: #fff;
         }
 
     }

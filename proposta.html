@@ -20,7 +20,7 @@
 		<![endif]-->
     
 </head>
-<body class="avoid-fout page-profile">
+<body class="avoid-fout page-proposal">
 	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
 		<div class="progress-circular progress-circular-alt progress-circular-center">
 			<div class="progress-circular-wrapper">
@@ -239,11 +239,9 @@
 
                       <div id="user-avatar">
 
-                                    <div class="avatar avatar-profile avatar-lg">
-                                       <span class="icon icon-person icon-lg"></span>
-                                    </div>
+                                    
 
-                                        <p>Nome do Usuário</p>
+                                        <h2>Nome da Proposta</h2>
                       </div>
                  </div>
             
@@ -252,19 +250,19 @@
                 <div class="clearfix"></div>
                 <div class="row" id="game-progress">
                     <div class="col-xs-3">
-                        <div class="avatar avatar-profile avatar-lg">
+                        <div class="avatar avatar-proposal avatar-lg">
                                        <span class="icon icon-looks-1 icon-lg"></span>
                         </div>
                     </div>
                     <div class="col-xs-6 text-center">
-                            <span>Você possui 280 pontos</span>
-                            <div class="progress progress-profile">
-                                <div class="progress-bar" style="width: 80%"></div>
+                            <span>Proposta possui 2800 pontos</span>
+                            <div class="progress progress-proposal">
+                                <div class="progress-bar" style="width: 70%"></div>
                             </div>
-                            <span>20 pontos até o próximo nível</span>
+                            <span>200 pontos até o próximo nível</span>
                     </div>
                     <div class="col-xs-3">
-                        <div class="avatar avatar-profile avatar-lg pull-right">
+                        <div class="avatar avatar-proposal avatar-lg pull-right">
                                        <span class="icon icon-looks-2 icon-lg"></span>
                         </div>
                     </div>
@@ -273,13 +271,13 @@
                 
                 <div class="row">
                     <div class="col-xs-4">
-                        <img src="https://img.shields.io/badge/perfil-delegado-7986cb.svg" />
+                        <img src="https://img.shields.io/badge/tag-educacao-ff9800.svg" />
                     </div>
                     <div class="col-xs-4">
-                        <img src="https://img.shields.io/badge/perfil-conselheiro-aed581.svg" />
+                        <img src="https://img.shields.io/badge/tag-seguranca-ff9800.svg" />
                     </div>
                     <div class="col-xs-4">
-                        <img src="https://img.shields.io/badge/perfil-etapa_municipal-4db6ac.svg" />
+                        <img src="https://img.shields.io/badge/origem-municipal-4db6ac.svg" />
                     </div>
                     
                 </div>
@@ -296,7 +294,7 @@
                                 <div class="modal-content">
                                     <div class="modal-heading">
                                         <a class="modal-close" data-dismiss="modal">×</a>
-                                        <h2 class="modal-title">Informações do Usuário</h2>
+                                        <h2 class="modal-title">Informações da Proposta</h2>
                                     </div>
                                     <div class="modal-inner">
                                         <p><strong>Descrição</strong></p>
@@ -307,11 +305,9 @@
                                         <ul>
                                             <li>Estado: </li>
                                             <li>Cidade: </li>
-                                            <li>Etinia: </li>
-                                            <li>Genero: </li>
-                                            <li>Idade: </li>
-                                            <li>Facebook: </li>
-                                            <li>Twitter: </li>
+                                            <li>Tags: </li>
+                                            <li>Temas: </li>
+                                            
                                         </ul>
 
                                     </div>
@@ -481,8 +477,11 @@
 		<div class="fbtn-inner">
 			<a class="fbtn fbtn-pink fbtn-lg" data-toggle="dropdown"><span class="fbtn-text">Mais opções</span><span class="fbtn-ori icon icon-add"></span><span class="fbtn-sub icon icon-close"></span></a>
             <div class="fbtn-dropdown">
-				<a class="fbtn fbtn-profile"><span class="fbtn-text">Editar Perfil</span><span class="icon icon-tune"></span></a>
-				<a class="fbtn fbtn-proposal"><span class="fbtn-text">Nova Proposta</span><span class="icon icon-mode-edit"></span></a>
+				<a class="fbtn fbtn-pink"><span class="fbtn-text">Seguir</span><span class="icon icon-notifications"></span></a>
+				<a class="fbtn fbtn-pink"><span class="fbtn-text">Comentar</span><span class="icon icon-comment"></span></a>
+                <a class="fbtn fbtn-pink"><span class="fbtn-text">Mobilizar</span><span class="icon icon-group"></span></a>
+                <a class="fbtn fbtn-pink"><span class="fbtn-text">Apoio</span><span class="icon icon-thumb-up"></span></a>
+                <a class="fbtn fbtn-pink"><span class="fbtn-text">Não concordo</span><span class="icon icon-thumb-down"></span></a>
 
 			</div>
 			
@@ -497,7 +496,7 @@
     var pattern = Trianglify({
         width: window.innerWidth, 
         height: 300,
-        x_colors: 'Blues',
+        x_colors: 'YlGn',
         y_colors: 'match_x',
         cell_size: 90,
         variance: 0.5

@@ -10143,7 +10143,7 @@ textarea.picker__select--year {
       overflow: auto; } }
 
 #cover {
-  background-image: url(../images/pattern.svg);
+  /*background-image:url(../images/pattern.svg); */
   display: flex;
   display: -webkit-flex;
   width: 100%;
@@ -10157,6 +10157,8 @@ textarea.picker__select--year {
       color: white;
       padding: 12px;
       font-size: 14pt; }
+    #cover #user-avatar h2 {
+      color: #fff; }
 
 #game-progress {
   margin-top: 10px;
