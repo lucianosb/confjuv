@@ -10253,12 +10253,14 @@ textarea.picker__select--year {
   	outline:none; 
 }*/
 .progressbar .step {
-  width: 25%; }
+  width: 25%;
+  opacity: 0.3; }
 .progressbar .step-first {
   border-radius: 20px 0 0 20px; }
 .progressbar .step-last {
   border-radius: 0 20px 20px 0; }
 .progressbar .active {
-  width: 33%; }
+  width: 33%;
+  opacity: 1; }
 
 /*# sourceMappingURL=base.css.map */
